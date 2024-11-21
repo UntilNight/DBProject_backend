@@ -7,6 +7,7 @@ This repository has the backend code for Foodie Finder. For the frontend code, g
 To run this application, you need to install express and dotenv. In the VSCode terminal, type the following commands:
 
  `npm install express`
+ 
  `npm install dotenv`
 
  # Oracle Set Up
@@ -33,6 +34,7 @@ After creating the restaurant table, you need create two stored procedures that 
 
 ### get_all_restaurants:
 In oracle, type the following to create the procedure:
+
    `CREATE OR REPLACE PROCEDURE get_all_restaurants (restaurants OUT SYS_REFCURSOR) AS
 BEGIN
     OPEN restaurants FOR
@@ -44,6 +46,7 @@ This will be used to fetch data of all restaurants on the homepage.
 
 ### get_restaurant_by_id:
 In oracle, type the following:
+
    `CREATE OR REPLACE PROCEDURE get_restaurant_by_id (
     p_restaurantID IN NUMBER,
     p_result OUT SYS_REFCURSOR
