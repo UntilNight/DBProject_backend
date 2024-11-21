@@ -14,6 +14,7 @@ async function getAllRestaurants() {
       );
   
       const restaurants = await result.outBinds.restaurants.getRows();
+      await connection.close();
   
       return restaurants;
 
