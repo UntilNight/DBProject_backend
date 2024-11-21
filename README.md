@@ -57,13 +57,16 @@ BEGIN
     SELECT * FROM restaurant WHERE restaurantID = p_restaurantID;
 END get_restaurant_by_id;
 /`
+
 This will be used to fetch data of a specific restaurant and display it on a seperate page.
 
 # Running the Application
 
 After the above steps have been completed, you will be ready to run the application.
 You wil also need the frontend repository to run this application and see restaurant data. 
-Clone the repository using `git clone https://github.com/UntilNight/dbproject_backend`
+Clone the repository using
+
+`git clone https://github.com/UntilNight/dbproject_backend`.
 
 To run the application, type `cd dbproject_backend`. Then, 
 type `npm start`. In a seperate terminal, `cd` into the directory with the frontend repository, and type `npm run dev`. Follow the link given 
