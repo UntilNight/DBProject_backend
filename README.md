@@ -9,7 +9,7 @@ To run this application, you need to install express and dotenv. In the VSCode t
  `npm install express`
  `npm install dotenv`
 
- ### Oracle Set Up
+ # Oracle Set Up
  ## Changing the .env File
 
 Then, change the values in the .env file to your oracle user credentials.
@@ -31,7 +31,7 @@ For this application, creating a table with the name 'restaurant' in oracle is n
 ## Creating Stored Procedures
 After creating the restaurant table, you need create two stored procedures that will be used to fetch data from the restaurant table:
 
-# get_all_restaurants:
+### get_all_restaurants:
 In oracle, type the following to create the procedure:
    `CREATE OR REPLACE PROCEDURE get_all_restaurants (restaurants OUT SYS_REFCURSOR) AS
 BEGIN
@@ -42,7 +42,7 @@ END get_all_restaurants;
 
 This will be used to fetch data of all restaurants on the homepage.
 
-# get_restaurant_by_id:
+### get_restaurant_by_id:
 In oracle, type the following:
    `CREATE OR REPLACE PROCEDURE get_restaurant_by_id (
     p_restaurantID IN NUMBER,
@@ -56,7 +56,7 @@ END get_restaurant_by_id;
 /`
 This will be used to fetch data of a specific restaurant and display it on a seperate page.
 
-### Running the Application
+# Running the Application
 
 After the above steps have been completed, you will be ready to run the application.
 You wil also need the frontend repository to run this application and see restaurant data. 
