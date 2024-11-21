@@ -4,11 +4,17 @@ This repository has the backend code for Foodie Finder. For the frontend code, g
 
 # Dependencies
 
-To run this application, you need to install express and dotenv. In the VSCode terminal, type the following commands:
+To run this application, you need to install express, dotenv, cors, and body parser. In the VSCode terminal, type the following commands:
 
  `npm install express`
  
  `npm install dotenv`
+
+ `npm install cors`
+
+ Before installing this, install the body parser module from https://www.npmjs.com/package/body-parser. Then, type:
+
+  `npm install body-parser express ejs`
 
  # Oracle Set Up
  ## Changing the .env File
