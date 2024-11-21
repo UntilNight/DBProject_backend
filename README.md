@@ -2,9 +2,12 @@
 # Foodie Finder Backend
 This repository has the backend code for Foodie Finder. For the frontend code, go to https://github.com/Alinazindani/FoodieFinder-Frontend. 
 
+# Dependencies
+
 To run this application, you need to install express and dotenv. In the VSCode terminal, type the following commands:
-1. npm install express
-2. npm install dotenv
+
+ `npm install express`
+ `npm install dotenv`
 
 Then, change the .envfile to your oracle user credentials.
 
