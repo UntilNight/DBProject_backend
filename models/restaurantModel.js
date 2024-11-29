@@ -51,8 +51,8 @@ async function getRestaurantById(id) {
 
 async function createRestaurant(restaurant){
     const connection = await oracledb.getConnection();
-    const result = await connection.execute('insert into restaurant values (:restaurantid, :name, :city, :address, :contactno, :description, :delivery_available, :dinein_available, :takeout_available, :image_url)',
-        [restaurant.restaurantid, restaurant.name, restaurant.city, restaurant.address, restaurant.contactno, restaurant.description, restaurant.delivery_available, restaurant.dinein_available, restaurant.takeout_available, restaurant.image_url]);
+    const result = await connection.execute('insert into restaurant values (:restaurantid, :name, :city, :address, :contactno, :description, :delivery_available, :dinein_available, :takeout_available, :image_url, :rating)',
+        [restaurant.restaurantid, restaurant.name, restaurant.city, restaurant.address, restaurant.contactno, restaurant.description, restaurant.delivery_available, restaurant.dinein_available, restaurant.takeout_available, restaurant.image_url, restaurant.rating]);
         await connection.commit(); 
         await connection.close();
         return result; 
